@@ -6,10 +6,9 @@ import {
   ChevronLeft, 
   ChevronRight, 
   Star, 
-  Users, 
   Layers, 
   Briefcase, 
-  CheckCircle2 
+  Code2
 } from 'lucide-react';
 import { TESTIMONIALS, STATS } from '../data/portfolioData';
 
@@ -38,10 +37,10 @@ export default function TestimonialsAndStats() {
   };
 
   const statIcons: Record<string, any> = {
-    Users,
     Layers,
     Briefcase,
-    Star
+    Star,
+    Code2
   };
 
   return (
@@ -181,7 +180,7 @@ export default function TestimonialsAndStats() {
             </div>
 
             {/* 2x2 Stats Grid (or 4 responsive items matching screenshot) */}
-            <div className="grid grid-cols-2 gap-4 flex-1">
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4 flex-1">
               {STATS.map((stat, sIdx) => {
                 const Icon = statIcons[stat.iconName] || Star;
                 return (
@@ -220,7 +219,7 @@ export default function TestimonialsAndStats() {
                 Currently accepting freelance & full-time roles
               </span>
               <span className="font-mono text-cyan-400 text-[11px]">
-                100% On-Time Delivery
+                Modern web stack
               </span>
             </div>
 

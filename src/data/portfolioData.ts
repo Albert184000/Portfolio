@@ -9,16 +9,16 @@ export const PERSONAL_INFO = {
   name: "UN Somnang",
   role: "Software Developer",
   tagline: "I build digital experiences that matter.",
-  bio: "I'm UN Somnang, a passionate full-stack developer who loves turning ideas into scalable, beautiful and performant web applications.",
-  aboutExtended: "I'm a full-stack developer with a strong focus on building modern, responsive and user-friendly web applications. I enjoy solving complex problems and continuously learning new technologies. With over 4 years in software engineering, I specialize in the React ecosystem, Node.js microservices, cloud-native deployments, and AI integrations.",
+  bio: "I'm UN Somnang, a passionate full-stack developer with 1+ year of experience building modern, responsive, and practical web applications.",
+  aboutExtended: "I'm a full-stack developer with 1+ year of experience building modern, responsive, and practical web applications. I enjoy solving real-world problems, learning new technologies, and creating clean interfaces backed by reliable application logic.",
   location: "Lahore, Pakistan",
   email: "hello@unsomnang.dev",
   phone: "+92 310 1234567",
   availability: "Open to Work",
   avatar: developerPortrait,
-  experienceYears: "4+",
-  projectsCount: "20+",
-  clientSatisfaction: "99%",
+  experienceYears: "1+",
+  projectsCount: "7+",
+  technologiesUsed: "5+",
   socials: {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
@@ -28,21 +28,21 @@ export const PERSONAL_INFO = {
 };
 
 export const CORE_SKILLS: SkillItem[] = [
-  { name: "JavaScript / TypeScript", percentage: 95, category: 'frontend', iconName: 'Code', experienceYears: "4+ years" },
-  { name: "React / Next.js", percentage: 90, category: 'frontend', iconName: 'Atom', experienceYears: "4 years" },
-  { name: "Node.js / Express", percentage: 85, category: 'backend', iconName: 'Server', experienceYears: "3.5 years" },
-  { name: "Python / Django", percentage: 75, category: 'backend', iconName: 'Terminal', experienceYears: "2.5 years" },
-  { name: "SQL / MongoDB", percentage: 80, category: 'database', iconName: 'Database', experienceYears: "3 years" },
-  { name: "HTML / CSS / Tailwind", percentage: 95, category: 'frontend', iconName: 'Palette', experienceYears: "4+ years" }
+  { name: "JavaScript / TypeScript", percentage: 90, category: 'frontend', iconName: 'Code', experienceYears: "1+ year" },
+  { name: "React / Next.js", percentage: 88, category: 'frontend', iconName: 'Atom', experienceYears: "1+ year" },
+  { name: "Node.js / Express", percentage: 78, category: 'backend', iconName: 'Server', experienceYears: "1 year" },
+  { name: "Python / Django", percentage: 70, category: 'backend', iconName: 'Terminal', experienceYears: "6+ months" },
+  { name: "SQL / MongoDB", percentage: 76, category: 'database', iconName: 'Database', experienceYears: "1 year" },
+  { name: "HTML / CSS / Tailwind", percentage: 92, category: 'frontend', iconName: 'Palette', experienceYears: "1+ year" }
 ];
 
 export const ADDITIONAL_SKILLS: SkillItem[] = [
-  { name: "GraphQL & REST APIs", percentage: 88, category: 'backend', iconName: 'Network', experienceYears: "3 years" },
-  { name: "Docker & AWS Cloud", percentage: 82, category: 'devops', iconName: 'Cloud', experienceYears: "2.5 years" },
-  { name: "Redis & Caching", percentage: 80, category: 'database', iconName: 'Layers', experienceYears: "2 years" },
-  { name: "CI/CD & Git Automation", percentage: 90, category: 'devops', iconName: 'GitBranch', experienceYears: "3.5 years" },
-  { name: "PostgreSQL & Prisma", percentage: 88, category: 'database', iconName: 'Boxes', experienceYears: "3 years" },
-  { name: "AI Integration & LLM APIs", percentage: 85, category: 'backend', iconName: 'Cpu', experienceYears: "2 years" }
+  { name: "GraphQL & REST APIs", percentage: 74, category: 'backend', iconName: 'Network', experienceYears: "6+ months" },
+  { name: "Docker & AWS Cloud", percentage: 68, category: 'devops', iconName: 'Cloud', experienceYears: "6+ months" },
+  { name: "Redis & Caching", percentage: 64, category: 'database', iconName: 'Layers', experienceYears: "6+ months" },
+  { name: "CI/CD & Git Automation", percentage: 76, category: 'devops', iconName: 'GitBranch', experienceYears: "1 year" },
+  { name: "PostgreSQL & Prisma", percentage: 78, category: 'database', iconName: 'Boxes', experienceYears: "1 year" },
+  { name: "AI Integration & LLM APIs", percentage: 72, category: 'backend', iconName: 'Cpu', experienceYears: "6+ months" }
 ];
 
 export const PROJECTS: Project[] = [
@@ -226,29 +226,28 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { id: "stat-clients", value: "20+", numericValue: 20, suffix: "+", label: "Happy Clients", iconName: "Users" },
-  { id: "stat-projects", value: "20+", numericValue: 20, suffix: "+", label: "Projects Completed", iconName: "Layers" },
-  { id: "stat-experience", value: "4+", numericValue: 4, suffix: "+", label: "Years Experience", iconName: "Briefcase" },
-  { id: "stat-satisfaction", value: "99%", numericValue: 99, suffix: "%", label: "Satisfaction Rate", iconName: "Star" }
+  { id: "stat-experience", value: "1+", numericValue: 1, suffix: "+", label: "Years Experience", iconName: "Briefcase" },
+  { id: "stat-projects", value: "7+", numericValue: 7, suffix: "+", label: "Projects Completed", iconName: "Layers" },
+  { id: "stat-technologies", value: "5+", numericValue: 5, suffix: "+", label: "Technologies Used", iconName: "Code2" }
 ];
 
 export const CAREER_MILESTONES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Engineer",
-    company: "Apex Digital Solutions",
-    description: "Leading frontend architecture and microservices design for enterprise web platforms serving 100k+ monthly active users."
-  },
-  {
-    year: "2021 - 2023",
+    year: "2026 - Present",
     role: "Full Stack Developer",
-    company: "Nexus Software Labs",
-    description: "Built scalable React/Next.js web applications, integrated payment processing gateways, and optimized SQL/NoSQL databases."
+    company: "Independent Projects",
+    description: "Building responsive portfolio, dashboard, and practical web application experiences with React, Laravel, APIs, and modern deployment workflows."
   },
   {
-    year: "2020 - 2021",
-    role: "Frontend Engineer",
-    company: "InnoTech Studios",
-    description: "Engineered responsive UI systems, component libraries, and interactive dashboards with rigorous performance benchmarks."
+    year: "2025 - 2026",
+    role: "Web Developer",
+    company: "Academic & Freelance Work",
+    description: "Developed frontend interfaces, backend routes, database-backed features, and reusable components for real-world learning and client-style projects."
+  },
+  {
+    year: "2025",
+    role: "Frontend Developer",
+    company: "Personal Portfolio Labs",
+    description: "Practiced clean UI implementation, responsive layouts, Tailwind styling, and smooth React interactions across portfolio and dashboard projects."
   }
 ];

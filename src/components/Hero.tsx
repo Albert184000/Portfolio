@@ -8,10 +8,7 @@ import {
   Mail, 
   Briefcase, 
   Layers, 
-  Star, 
   Code2, 
-  Sparkles,
-  CheckCircle2
 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
@@ -65,7 +62,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
 
             {/* Subtitle / Bio */}
             <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl font-normal">
-              I'm <span className="text-white font-semibold">{PERSONAL_INFO.name}</span>, a passionate full-stack developer who loves turning ideas into scalable, beautiful and performant web applications.
+              {PERSONAL_INFO.bio}
             </p>
 
             {/* CTA Action Buttons */}
@@ -151,7 +148,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#060D19] via-transparent to-transparent opacity-80" />
               </motion.div>
 
-              {/* Floating Stat Card 1: 4+ Years of Experience (Top Right) */}
+              {/* Floating Stat Card 1: Years Experience (Top Right) */}
               <motion.div
                 id="hero-stat-experience"
                 initial={{ opacity: 0, x: 30, y: -20 }}
@@ -165,7 +162,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
                     {PERSONAL_INFO.experienceYears}
                   </div>
                   <div className="text-[11px] font-medium text-slate-400 whitespace-nowrap">
-                    Years of Experience
+                    Years Experience
                   </div>
                 </div>
                 <div className="w-8 h-8 rounded-xl bg-cyan-950/80 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
@@ -173,7 +170,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
                 </div>
               </motion.div>
 
-              {/* Floating Stat Card 2: 20+ Projects Completed (Middle Right) */}
+              {/* Floating Stat Card 2: Projects Completed (Middle Right) */}
               <motion.div
                 id="hero-stat-projects"
                 initial={{ opacity: 0, x: 30 }}
@@ -196,9 +193,9 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
                 </div>
               </motion.div>
 
-              {/* Floating Stat Card 3: 99% Client Satisfaction (Lower Right) */}
+              {/* Floating Stat Card 3: Technologies Used (Lower Right) */}
               <motion.div
-                id="hero-stat-satisfaction"
+                id="hero-stat-technologies"
                 initial={{ opacity: 0, x: 30, y: 20 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
@@ -208,14 +205,14 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
               >
                 <div>
                   <div className="text-xl sm:text-2xl font-extrabold text-cyan-300 tracking-tight">
-                    {PERSONAL_INFO.clientSatisfaction}
+                    {PERSONAL_INFO.technologiesUsed}
                   </div>
                   <div className="text-[11px] font-medium text-slate-400 whitespace-nowrap">
-                    Client Satisfaction
+                    Technologies Used
                   </div>
                 </div>
                 <div className="w-8 h-8 rounded-xl bg-cyan-950/80 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
-                  <Star className="w-4 h-4 fill-cyan-400/20" />
+                  <Code2 className="w-4 h-4" />
                 </div>
               </motion.div>
 
